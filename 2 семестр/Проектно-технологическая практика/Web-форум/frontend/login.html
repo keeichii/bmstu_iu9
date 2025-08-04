@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Вход</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .auth-container {
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .auth-container h2 {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+
+    .auth-container input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #ccc;
+      color: white;
+      font-size: 16px;
+    }
+
+    .auth-container input::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .auth-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4a76a8;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .auth-container button:hover {
+      background-color: #4a76a8;
+    }
+  </style>
+</head>
+<body class="page">
+  <body class="page">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__left">
+          <a href="http://localhost:5500/" class="header__logo">Вбауманке</a>
+
+          <div class="header__auth">
+            <button class="header__button" onclick="location.href='login.html'" id="login-link">Вход</button>
+            <button class="header__button" onclick="location.href='register.html'" id="register-link">Регистрация</button>
+          </div>
+        </div>
+  
+        <div class="header__menu-vertical">
+          <div class="header__menu-item" onclick="window.location.href='index.html'">Лента</div>
+          <div class="header__menu-item logout-btn-wrapper" style="display: none;">
+            <button id="logout-btn" class="logout-btn-small">Выйти</button>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+
+
+  <main class="main">
+    <div class="main__container">
+      <div class="auth-container">
+        <h2>Вход</h2>
+        <form id="login-form">
+          <input type="text" id="username" placeholder="например, bauman_user" required />
+          <input type="password" id="password" placeholder="введите пароль" required />
+          <button type="submit">Войти</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+# Python venv
+venv/
+
+# кэш байт‑кода
+__pycache__/
+*.py[cod]
+
+# IDE
+.idea/
+
+# локальные БД
+*.db
+*.sqlite3
+
+# секреты
+.env

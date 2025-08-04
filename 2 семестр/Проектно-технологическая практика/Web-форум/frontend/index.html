@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Форум</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .create-post__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .toggle-btn {
+      background-color: #4a76a8;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 4px 10px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .header__menu-horizontal {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header__logout-button {
+      background-color: #ff4f4f;
+      border: none;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="page">
+
+  <!-- Шапка -->
+  <header class="header">
+    <div class="header__container">
+      <!-- Левая часть: логотип и авторизация -->
+      <div class="header__left">
+        <a href="http://localhost:5500/" class="header__logo">Вбауманке</a>
+
+        <div class="header__auth">
+          <a href="login.html" class="header__button" id="login-link">Вход</a>
+          <a href="register.html" class="header__button" id="register-link">Регистрация</a>
+        </div>
+      </div>
+
+      <!-- Правая часть: меню -->
+      <div class="header__menu-horizontal">
+        <div class="header__menu-item" onclick="window.location.href='index.html'">Лента</div>
+        <button id="logout-btn" class="header__logout-button" style="display: none;">Выйти</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main__container">
+
+      <!-- Панель пользователя -->
+      <section id="user-panel" class="user-panel" style="display: none;">
+        <div class="user-panel__content">
+          <div id="user-info" class="user-info" style="display: none;">
+            <h3 id="username-display">Пользователь: ...</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Создание поста -->
+<section class="create-post" id="create-post-section">
+    <div class="create-post__header" id="create-post-toggle">
+      <h2 class="toggle-title">Создать пост</h2>
+      <button id="toggle-post-form" class="toggle-btn">–</button>
+    </div>
+    <form id="create-post-form">
+      <input type="text" id="post-title" placeholder="Заголовок (например, «Моя первая тема»)" required>
+      <textarea id="post-content" placeholder="Текст поста (например, «Поделитесь мнением…»)" required></textarea>
+      <button type="submit">Опубликовать</button>
+    </form>
+  </section>
+  
+  
+
+      <!-- Лента -->
+      <section class="feed">
+        <h2 class="feed__title">Лента постов</h2>
+        <div id="post-list" class="feed__list"></div>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/posts.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+1. Изучить гипертекстовый язык разметки (HTML5) и таблицы каскадных стилей (CSS3)
+Гипертекстовый язык разметки состоит из тегов и их атрибутов, а таблицы каскадных стилей состоят из свойств и их значений.
+Изучать только последние версии и по справочникам.
+
+https://htmlbook.ru/html
+https://html5book.ru/html-html5/ 
+https://developer.mozilla.org/ru/docs/Web/HTML 
+https://html5css.ru/tags/default.php
+
+2. Изучить javascript
+Для начала изучения прикрепляю файл с основами javascript. В дальнейшем, продолжить изхучение по документации.
+
+https://developer.mozilla.org/ru/docs/Web/JavaScript 
+
+3. Фреймворки
+Можно использовать BOOTSTRAP, REACT, ANGULAR, TYPESCRIPT, COFFEESCRIPT, LARAVEL (последние версии)
+
+https://getbootstrap.com (https://getbootstrap.com/) 
+https://ru.legacy.reactjs.org (https://ru.legacy.reactjs.org/) 
+https://angular.dev (https://angular.dev/) 
+https://www.typescriptlang.org (https://www.typescriptlang.org/) 
+https://coffeescript.org (https://coffeescript.org/) 
+https://laravel.com (https://laravel.com/) 
+
+4. Изучить контейнеризацию web-приложений в Docker
+
+https://www.docker.com (https://www.docker.com/)
+
+5. Дополнения
+Web-приложения должны быть валидными, адаптивными к различным устройствам и кроссбраузерными. Для этого необходимо проверить готовый ресурс на валидность, использовать адаптивные размерности у элементов и @media запросы в CSS для указания различных размерностей экранов устройств. Так же тестировать в различных браузерах и добавлять элементам в CSS префиксы. При именовании классов и идентификаторов можно использовать методологию БЭМ. Для сборки проектов можно использовать WEBPACK. Для большей производительности работы, при написании свойств CSS, использовать препроцессор SASS (или другие). Для быстрой верстки HTML и CSS в редакторах, можно использовать плагин Emmet.
+
+https://brackets.io (https://brackets.io/) — редактор кода
+https://validator.w3.org (https://validator.w3.org/) — проверка на валидность
+https://sass-lang.com (https://sass-lang.com/) — препроцессор SASS
+https://ru.bem.info/methodology/ — методология БЭМ (тоже есть сборщик)
+https://webpack.js.org (https://webpack.js.org/) — сборщик проектов
